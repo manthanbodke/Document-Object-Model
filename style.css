@@ -1,0 +1,119 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #1c1c1c; /* Dark background color */
+    color: #f1f1f1; /* Light text color */
+    min-height: 100vh; /* Ensures background covers full viewport */
+}
+
+/* Header styles */
+header {
+    background-color: #282828; /* Darker header background */
+    color: #f1f1f1; /* Light text for the header */
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff9800; /* Vibrant hover color for navigation links */
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    text-align: center; /* Center the main content */
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content vertically */
+    justify-content: center;
+    margin-top: 40px; /* Add some space at the top */
+}
+
+article {
+    max-width: 600px;
+    text-align: left; /* Keep the text aligned to the left */
+    margin-bottom: 20px;
+    background-color: #333; /* Dark background for the content section */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    margin-top: 20px;
+}
+
+.image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow effect for image */
+}
+
+.buttons {
+    margin-top: 30px;
+    text-align: center;
+}
+
+button {
+    background-color: #ff9800; /* Vibrant orange button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #e57c00; /* Darker orange on hover */
+    transform: scale(1.05); /* Slight scale-up on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color: #282828;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    #content {
+        flex-direction: column;
+        text-align: center;
+    }
+}

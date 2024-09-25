@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1 id="header">Welcome to My Dynamic Web Page</h1>
+    </header>
+
+    <main>
+        <section id="content">
+            <article>
+                <h2>About MIT World Peace University</h2>
+                <p id="description">MIT World Peace University (MIT-WPU) is a leading university located in Pune, Maharashtra.</p>
+            </article>
+            <div class="image-container">
+                <img id="myImage" class="image" src="image3.webp" alt="Image">
+            </div>
+        </section>
+
+        <section class="buttons">
+            <button onclick="changeText()">Change Header Text</button>
+            <button onclick="changeColor()">Change Paragraph Color</button>
+            <button onclick="moveParagraph()">Move Paragraph</button>
+            <button onclick="changeImage()">Change Image</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
